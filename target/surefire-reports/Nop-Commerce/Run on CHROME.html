@@ -1,0 +1,282 @@
+<html>
+<head>
+<title>TestNG:  Run on CHROME</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Run on CHROME</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Feb 19 12:01:39 ICT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>23 seconds (23314 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nopcommerce.user.User_04_Search.Search_01_Empty_Data()'><b>Search_01_Empty_Data</b><br>Test class: com.nopcommerce.user.User_04_Search<br/>
+<a href="#Output-1096682443" onClick='toggleBox("Output-1096682443", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1096682443" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1096682443">
+[INFO ] [2022-02-19 12:01:55,749] Search_Empty data Step 01: click to search button
+<br/>
+[INFO ] [2022-02-19 12:01:56,244] Search_Empty data Step 02: verify error empty data displayed
+<br/>
+[INFO ] [2022-02-19 12:01:56,315]  -------------------------- PASSED -------------------------- 
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.user.User_04_Search@7c29daf3</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_04_Search.Search_02_Not_Exit_Data()'><b>Search_02_Not_Exit_Data</b><br>Test class: com.nopcommerce.user.User_04_Search<br/>
+<a href="#Output-1677984391" onClick='toggleBox("Output-1677984391", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1677984391" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1677984391">
+[INFO ] [2022-02-19 12:01:56,316] Search_Not exit data Step 01: input to search keyword textbox: macbook pro 2015
+<br/>
+[INFO ] [2022-02-19 12:01:56,463] Search_Not exit data Step 02: click to search button
+<br/>
+[INFO ] [2022-02-19 12:01:56,957] Search_Not exit data Step 03: verify message not exit data: No products were found that matched your criteria.
+<br/>
+[INFO ] [2022-02-19 12:01:57,014]  -------------------------- PASSED -------------------------- 
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.user.User_04_Search@7c29daf3</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_04_Search.Search_03_Relative_Product()'><b>Search_03_Relative_Product</b><br>Test class: com.nopcommerce.user.User_04_Search<br/>
+<a href="#Output-688988404" onClick='toggleBox("Output-688988404", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-688988404" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-688988404">
+[INFO ] [2022-02-19 12:01:57,014] Search_Relative product Step 01: input to search keyword textbox: Lenovo
+<br/>
+[INFO ] [2022-02-19 12:01:57,145] Search_Relative product Step 02: click to search button
+<br/>
+[INFO ] [2022-02-19 12:01:57,725] Search_Relative product Step 03: verify with relative product dispalyed
+<br/>
+[INFO ] [2022-02-19 12:01:57,788]  -------------------------- PASSED -------------------------- 
+<br/>
+[INFO ] [2022-02-19 12:01:57,853]  -------------------------- PASSED -------------------------- 
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.user.User_04_Search@7c29daf3</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_04_Search.Search_04_Absolute_Product()'><b>Search_04_Absolute_Product</b><br>Test class: com.nopcommerce.user.User_04_Search<br/>
+<a href="#Output-45643137" onClick='toggleBox("Output-45643137", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-45643137" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-45643137">
+[INFO ] [2022-02-19 12:01:57,854] Search_Absolute product Step 01: input to search keyword textbox: ThinkPad X1 Carbon
+<br/>
+[INFO ] [2022-02-19 12:01:57,997] Search_Absolute product Step 02: click to search button
+<br/>
+[INFO ] [2022-02-19 12:01:58,495] Search_Absolute product Step 03: verify with absolute product dispalyed
+<br/>
+[INFO ] [2022-02-19 12:01:58,554]  -------------------------- PASSED -------------------------- 
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.user.User_04_Search@7c29daf3</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_04_Search.Search_05_Parent_Categories()'><b>Search_05_Parent_Categories</b><br>Test class: com.nopcommerce.user.User_04_Search<br/>
+<a href="#Output-329481770" onClick='toggleBox("Output-329481770", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-329481770" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-329481770">
+[INFO ] [2022-02-19 12:01:58,554] Search_Parent categories Step 01: input to search keyword textbox: Apple MacBook Pro
+<br/>
+[INFO ] [2022-02-19 12:01:58,698] Search_Parent categories Step 02: click to advanced search
+<br/>
+[INFO ] [2022-02-19 12:01:58,806] Search_Parent categories Step 03: input to category textbox: Computers
+<br/>
+[INFO ] [2022-02-19 12:01:58,900] Search_Parent categories Step 04: click to search button
+<br/>
+[INFO ] [2022-02-19 12:01:59,399] Search_Parent categories Step 05: verify message not exit data: No products were found that matched your criteria.
+<br/>
+[INFO ] [2022-02-19 12:01:59,455]  -------------------------- PASSED -------------------------- 
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.user.User_04_Search@7c29daf3</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_04_Search.Search_06_Sub_Categories()'><b>Search_06_Sub_Categories</b><br>Test class: com.nopcommerce.user.User_04_Search<br/>
+<a href="#Output-1949672824" onClick='toggleBox("Output-1949672824", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1949672824" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1949672824">
+[INFO ] [2022-02-19 12:01:59,456] Search_Sub categories Step 01: input to search keyword textbox: Apple MacBook Pro
+<br/>
+[INFO ] [2022-02-19 12:01:59,616] Search_Sub categories Step 02: input to category textbox: Computers
+<br/>
+[INFO ] [2022-02-19 12:01:59,713] Search_Sub categories Step 03: click to sub categories
+<br/>
+[INFO ] [2022-02-19 12:01:59,807] Search_Sub categories Step 04: click to search button
+<br/>
+[INFO ] [2022-02-19 12:02:00,325] Search_Sub categories Step 05: verify product dispalyed: Apple MacBook Pro 13-inch
+<br/>
+[INFO ] [2022-02-19 12:02:00,376]  -------------------------- PASSED -------------------------- 
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.user.User_04_Search@7c29daf3</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_04_Search.Search_07_Incorrect_Manufacturer()'><b>Search_07_Incorrect_Manufacturer</b><br>Test class: com.nopcommerce.user.User_04_Search<br/>
+<a href="#Output-1154172430" onClick='toggleBox("Output-1154172430", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1154172430" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1154172430">
+[INFO ] [2022-02-19 12:02:00,377] Search_Incorrect manufacturer Step 01: input to search keyword textbox: Apple MacBook Pro
+<br/>
+[INFO ] [2022-02-19 12:02:00,522] Search_Incorrect manufacturer Step 02: input to category textbox: Computers
+<br/>
+[INFO ] [2022-02-19 12:02:00,622] Search_Incorrect manufacturer Step 03: input to manufacturer textbox: HP
+<br/>
+[INFO ] [2022-02-19 12:02:00,714] Search_Incorrect manufacturer Step 04: click to search button
+<br/>
+[INFO ] [2022-02-19 12:02:01,234] Search_Incorrect manufacturer Step 05: verify message not exit data: No products were found that matched your criteria.
+<br/>
+[INFO ] [2022-02-19 12:02:01,305]  -------------------------- PASSED -------------------------- 
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.user.User_04_Search@7c29daf3</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_04_Search.Search_08_Correct_Manufacturer()'><b>Search_08_Correct_Manufacturer</b><br>Test class: com.nopcommerce.user.User_04_Search<br/>
+<a href="#Output-826690115" onClick='toggleBox("Output-826690115", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-826690115" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-826690115">
+[INFO ] [2022-02-19 12:02:01,308] Search_Correct manufacturer Step 01: input to search keyword textbox: Apple MacBook Pro
+<br/>
+[INFO ] [2022-02-19 12:02:01,461] Search_Correct manufacturer Step 02: input to category textbox: Computers
+<br/>
+[INFO ] [2022-02-19 12:02:01,552] Search_Correct manufacturer Step 03: input to manufacturer textbox: Apple
+<br/>
+[INFO ] [2022-02-19 12:02:01,630] Search_Correct manufacturer Step 04: click to search button
+<br/>
+[INFO ] [2022-02-19 12:02:02,154] Search_Correct manufacturer Step 05: verify product dispalyed: Apple MacBook Pro 13-inch
+<br/>
+[INFO ] [2022-02-19 12:02:02,218]  -------------------------- PASSED -------------------------- 
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.user.User_04_Search@7c29daf3</td></tr>
+<tr>
+<td title='com.nopcommerce.user.User_01_Register.User_03_Register_With_Success_Email_Password()'><b>User_03_Register_With_Success_Email_Password</b><br>Test class: com.nopcommerce.user.User_01_Register<br/>
+<a href="#Output-1348115836" onClick='toggleBox("Output-1348115836", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1348115836" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1348115836">
+[INFO ] [2022-02-19 12:01:44,520] Register_Invalid email - Step 01: Click to Male radio button
+<br/>
+[INFO ] [2022-02-19 12:01:45,016] Register_Invalid email - Step 02: Input firstname textbox: quang
+<br/>
+[INFO ] [2022-02-19 12:01:45,172] Register_Invalid email - Step 03: Input lastname textbox:nguyen
+<br/>
+[INFO ] [2022-02-19 12:01:45,347] Register_Invalid email - Step 04: Selected day: 3
+<br/>
+[INFO ] [2022-02-19 12:01:45,461] Register_Invalid email - Step 05: Selected month: March
+<br/>
+[INFO ] [2022-02-19 12:01:45,557] Register_Invalid email - Step 06: Selected year: 1999
+<br/>
+[INFO ] [2022-02-19 12:01:45,661] Register_Invalid email - Step 07: Input invalid email textbox: quangnguyen2624@gmail.com
+<br/>
+[INFO ] [2022-02-19 12:01:45,819] Register_Invalid email - Step 08: Input company textbox: hutech
+<br/>
+[INFO ] [2022-02-19 12:01:45,957] Register_Invalid email - Step 09: Input password textbox: 123456
+<br/>
+[INFO ] [2022-02-19 12:01:46,232] Register_Invalid email - Step 10: Click to register button
+<br/>
+[INFO ] [2022-02-19 12:01:47,111] Register_Invalid email - Step 11: Verify success message register
+<br/>
+[INFO ] [2022-02-19 12:01:47,187]  -------------------------- PASSED -------------------------- 
+<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.nopcommerce.user.User_01_Register@4bbfb90a</td></tr>
+</table><p>
+</body>
+</html>

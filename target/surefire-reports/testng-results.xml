@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+  <reporter-output>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:43,882] Pre-condition Step 01: Open Register link
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:44,520] Register_Invalid email - Step 01: Click to Male radio button
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:45,016] Register_Invalid email - Step 02: Input firstname textbox: quang
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:45,172] Register_Invalid email - Step 03: Input lastname textbox:nguyen
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:45,347] Register_Invalid email - Step 04: Selected day: 3
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:45,461] Register_Invalid email - Step 05: Selected month: March
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:45,557] Register_Invalid email - Step 06: Selected year: 1999
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:45,661] Register_Invalid email - Step 07: Input invalid email textbox: quangnguyen2624@gmail.com
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:45,819] Register_Invalid email - Step 08: Input company textbox: hutech
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:45,957] Register_Invalid email - Step 09: Input password textbox: 123456
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:46,232] Register_Invalid email - Step 10: Click to register button
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:47,111] Register_Invalid email - Step 11: Verify success message register
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:47,187]  -------------------------- PASSED -------------------------- 
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:49,667] OS name = windows 10
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:49,668] Driver instance name = windows 10
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:53,508] Pre-condition Step 01: Open homepage nop commerce
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:53,508] Pre-condition Step 02: Click and open login link
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:54,075] Pre-condition Step 03: Input to email textbox: quangnguyen2624@gmail.com
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:54,215] Pre-condition Step 04: Input to password textbox: 123456
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:54,359] Pre-condition Step 05: Click login button
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:55,144] Pre-condition Step 06: Click to search link at footer
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:55,749] Search_Empty data Step 01: click to search button
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:56,244] Search_Empty data Step 02: verify error empty data displayed
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:56,315]  -------------------------- PASSED -------------------------- 
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:56,316] Search_Not exit data Step 01: input to search keyword textbox: macbook pro 2015
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:56,463] Search_Not exit data Step 02: click to search button
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:56,957] Search_Not exit data Step 03: verify message not exit data: No products were found that matched your criteria.
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:57,014]  -------------------------- PASSED -------------------------- 
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:57,014] Search_Relative product Step 01: input to search keyword textbox: Lenovo
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:57,145] Search_Relative product Step 02: click to search button
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:57,725] Search_Relative product Step 03: verify with relative product dispalyed
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:57,788]  -------------------------- PASSED -------------------------- 
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:57,853]  -------------------------- PASSED -------------------------- 
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:57,854] Search_Absolute product Step 01: input to search keyword textbox: ThinkPad X1 Carbon
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:57,997] Search_Absolute product Step 02: click to search button
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:58,495] Search_Absolute product Step 03: verify with absolute product dispalyed
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:58,554]  -------------------------- PASSED -------------------------- 
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:58,554] Search_Parent categories Step 01: input to search keyword textbox: Apple MacBook Pro
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:58,698] Search_Parent categories Step 02: click to advanced search
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:58,806] Search_Parent categories Step 03: input to category textbox: Computers
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:58,900] Search_Parent categories Step 04: click to search button
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:59,399] Search_Parent categories Step 05: verify message not exit data: No products were found that matched your criteria.
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:59,455]  -------------------------- PASSED -------------------------- 
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:59,456] Search_Sub categories Step 01: input to search keyword textbox: Apple MacBook Pro
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:59,616] Search_Sub categories Step 02: input to category textbox: Computers
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:59,713] Search_Sub categories Step 03: click to sub categories
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:01:59,807] Search_Sub categories Step 04: click to search button
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:02:00,325] Search_Sub categories Step 05: verify product dispalyed: Apple MacBook Pro 13-inch
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:02:00,376]  -------------------------- PASSED -------------------------- 
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:02:00,377] Search_Incorrect manufacturer Step 01: input to search keyword textbox: Apple MacBook Pro
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:02:00,522] Search_Incorrect manufacturer Step 02: input to category textbox: Computers
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:02:00,622] Search_Incorrect manufacturer Step 03: input to manufacturer textbox: HP
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:02:00,714] Search_Incorrect manufacturer Step 04: click to search button
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:02:01,234] Search_Incorrect manufacturer Step 05: verify message not exit data: No products were found that matched your criteria.
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:02:01,305]  -------------------------- PASSED -------------------------- 
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:02:01,308] Search_Correct manufacturer Step 01: input to search keyword textbox: Apple MacBook Pro
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:02:01,461] Search_Correct manufacturer Step 02: input to category textbox: Computers
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:02:01,552] Search_Correct manufacturer Step 03: input to manufacturer textbox: Apple
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:02:01,630] Search_Correct manufacturer Step 04: click to search button
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:02:02,154] Search_Correct manufacturer Step 05: verify product dispalyed: Apple MacBook Pro 13-inch
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:02:02,218]  -------------------------- PASSED -------------------------- 
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:02:02,218] OS name = windows 10
+]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-02-19 12:02:02,218] Driver instance name = windows 10
+]]>
+    </line>
+  </reporter-output>
+  <suite name="Nop-Commerce" duration-ms="23314" started-at="2022-02-19T05:01:39Z" finished-at="2022-02-19T05:02:03Z">
+    <groups>
+    </groups>
+    <test name="Run on CHROME" duration-ms="23314" started-at="2022-02-19T05:01:39Z" finished-at="2022-02-19T05:02:03Z">
+      <class name="com.nopcommerce.user.User_04_Search">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.user.User_04_Search@7c29daf3]" name="beforeClass" is-config="true" duration-ms="5276" started-at="2022-02-19T05:01:50Z" finished-at="2022-02-19T05:01:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demo.nopcommerce.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:53,508] Pre-condition Step 01: Open homepage nop commerce
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:53,508] Pre-condition Step 02: Click and open login link
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:54,075] Pre-condition Step 03: Input to email textbox: quangnguyen2624@gmail.com
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:54,215] Pre-condition Step 04: Input to password textbox: 123456
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:54,359] Pre-condition Step 05: Click login button
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:55,144] Pre-condition Step 06: Click to search link at footer
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="Search_01_Empty_Data()[pri:0, instance:com.nopcommerce.user.User_04_Search@7c29daf3]" name="Search_01_Empty_Data" duration-ms="566" started-at="2022-02-19T05:01:55Z" finished-at="2022-02-19T05:01:56Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:55,749] Search_Empty data Step 01: click to search button
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:56,244] Search_Empty data Step 02: verify error empty data displayed
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:56,315]  -------------------------- PASSED -------------------------- 
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Search_01_Empty_Data -->
+        <test-method status="PASS" signature="Search_02_Not_Exit_Data()[pri:0, instance:com.nopcommerce.user.User_04_Search@7c29daf3]" name="Search_02_Not_Exit_Data" duration-ms="699" started-at="2022-02-19T05:01:56Z" finished-at="2022-02-19T05:01:57Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:56,316] Search_Not exit data Step 01: input to search keyword textbox: macbook pro 2015
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:56,463] Search_Not exit data Step 02: click to search button
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:56,957] Search_Not exit data Step 03: verify message not exit data: No products were found that matched your criteria.
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:57,014]  -------------------------- PASSED -------------------------- 
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Search_02_Not_Exit_Data -->
+        <test-method status="PASS" signature="Search_03_Relative_Product()[pri:0, instance:com.nopcommerce.user.User_04_Search@7c29daf3]" name="Search_03_Relative_Product" duration-ms="839" started-at="2022-02-19T05:01:57Z" finished-at="2022-02-19T05:01:57Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:57,014] Search_Relative product Step 01: input to search keyword textbox: Lenovo
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:57,145] Search_Relative product Step 02: click to search button
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:57,725] Search_Relative product Step 03: verify with relative product dispalyed
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:57,788]  -------------------------- PASSED -------------------------- 
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:57,853]  -------------------------- PASSED -------------------------- 
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Search_03_Relative_Product -->
+        <test-method status="PASS" signature="Search_04_Absolute_Product()[pri:0, instance:com.nopcommerce.user.User_04_Search@7c29daf3]" name="Search_04_Absolute_Product" duration-ms="700" started-at="2022-02-19T05:01:57Z" finished-at="2022-02-19T05:01:58Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:57,854] Search_Absolute product Step 01: input to search keyword textbox: ThinkPad X1 Carbon
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:57,997] Search_Absolute product Step 02: click to search button
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:58,495] Search_Absolute product Step 03: verify with absolute product dispalyed
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:58,554]  -------------------------- PASSED -------------------------- 
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Search_04_Absolute_Product -->
+        <test-method status="PASS" signature="Search_05_Parent_Categories()[pri:0, instance:com.nopcommerce.user.User_04_Search@7c29daf3]" name="Search_05_Parent_Categories" duration-ms="901" started-at="2022-02-19T05:01:58Z" finished-at="2022-02-19T05:01:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:58,554] Search_Parent categories Step 01: input to search keyword textbox: Apple MacBook Pro
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:58,698] Search_Parent categories Step 02: click to advanced search
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:58,806] Search_Parent categories Step 03: input to category textbox: Computers
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:58,900] Search_Parent categories Step 04: click to search button
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:59,399] Search_Parent categories Step 05: verify message not exit data: No products were found that matched your criteria.
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:59,455]  -------------------------- PASSED -------------------------- 
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Search_05_Parent_Categories -->
+        <test-method status="PASS" signature="Search_06_Sub_Categories()[pri:0, instance:com.nopcommerce.user.User_04_Search@7c29daf3]" name="Search_06_Sub_Categories" duration-ms="921" started-at="2022-02-19T05:01:59Z" finished-at="2022-02-19T05:02:00Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:59,456] Search_Sub categories Step 01: input to search keyword textbox: Apple MacBook Pro
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:59,616] Search_Sub categories Step 02: input to category textbox: Computers
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:59,713] Search_Sub categories Step 03: click to sub categories
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:59,807] Search_Sub categories Step 04: click to search button
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:02:00,325] Search_Sub categories Step 05: verify product dispalyed: Apple MacBook Pro 13-inch
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:02:00,376]  -------------------------- PASSED -------------------------- 
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Search_06_Sub_Categories -->
+        <test-method status="PASS" signature="Search_07_Incorrect_Manufacturer()[pri:0, instance:com.nopcommerce.user.User_04_Search@7c29daf3]" name="Search_07_Incorrect_Manufacturer" duration-ms="930" started-at="2022-02-19T05:02:00Z" finished-at="2022-02-19T05:02:01Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:02:00,377] Search_Incorrect manufacturer Step 01: input to search keyword textbox: Apple MacBook Pro
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:02:00,522] Search_Incorrect manufacturer Step 02: input to category textbox: Computers
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:02:00,622] Search_Incorrect manufacturer Step 03: input to manufacturer textbox: HP
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:02:00,714] Search_Incorrect manufacturer Step 04: click to search button
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:02:01,234] Search_Incorrect manufacturer Step 05: verify message not exit data: No products were found that matched your criteria.
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:02:01,305]  -------------------------- PASSED -------------------------- 
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Search_07_Incorrect_Manufacturer -->
+        <test-method status="PASS" signature="Search_08_Correct_Manufacturer()[pri:0, instance:com.nopcommerce.user.User_04_Search@7c29daf3]" name="Search_08_Correct_Manufacturer" duration-ms="910" started-at="2022-02-19T05:02:01Z" finished-at="2022-02-19T05:02:02Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:02:01,308] Search_Correct manufacturer Step 01: input to search keyword textbox: Apple MacBook Pro
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:02:01,461] Search_Correct manufacturer Step 02: input to category textbox: Computers
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:02:01,552] Search_Correct manufacturer Step 03: input to manufacturer textbox: Apple
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:02:01,630] Search_Correct manufacturer Step 04: click to search button
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:02:02,154] Search_Correct manufacturer Step 05: verify product dispalyed: Apple MacBook Pro 13-inch
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:02:02,218]  -------------------------- PASSED -------------------------- 
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Search_08_Correct_Manufacturer -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.user.User_04_Search@7c29daf3]" name="afterClass" is-config="true" duration-ms="807" started-at="2022-02-19T05:02:02Z" finished-at="2022-02-19T05:02:03Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:02:02,218] OS name = windows 10
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:02:02,218] Driver instance name = windows 10
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.user.User_04_Search -->
+      <class name="com.nopcommerce.user.User_01_Register">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.user.User_01_Register@4bbfb90a]" name="beforeClass" is-config="true" duration-ms="4780" started-at="2022-02-19T05:01:39Z" finished-at="2022-02-19T05:01:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demo.nopcommerce.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:43,882] Pre-condition Step 01: Open Register link
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="User_03_Register_With_Success_Email_Password()[pri:0, instance:com.nopcommerce.user.User_01_Register@4bbfb90a]" name="User_03_Register_With_Success_Email_Password" duration-ms="5162" started-at="2022-02-19T05:01:44Z" finished-at="2022-02-19T05:01:49Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:44,520] Register_Invalid email - Step 01: Click to Male radio button
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:45,016] Register_Invalid email - Step 02: Input firstname textbox: quang
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:45,172] Register_Invalid email - Step 03: Input lastname textbox:nguyen
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:45,347] Register_Invalid email - Step 04: Selected day: 3
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:45,461] Register_Invalid email - Step 05: Selected month: March
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:45,557] Register_Invalid email - Step 06: Selected year: 1999
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:45,661] Register_Invalid email - Step 07: Input invalid email textbox: quangnguyen2624@gmail.com
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:45,819] Register_Invalid email - Step 08: Input company textbox: hutech
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:45,957] Register_Invalid email - Step 09: Input password textbox: 123456
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:46,232] Register_Invalid email - Step 10: Click to register button
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:47,111] Register_Invalid email - Step 11: Verify success message register
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:47,187]  -------------------------- PASSED -------------------------- 
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- User_03_Register_With_Success_Email_Password -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.user.User_01_Register@4bbfb90a]" name="afterClass" is-config="true" duration-ms="803" started-at="2022-02-19T05:01:49Z" finished-at="2022-02-19T05:01:50Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:49,667] OS name = windows 10
+]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-02-19 12:01:49,668] Driver instance name = windows 10
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.user.User_01_Register -->
+    </test> <!-- Run on CHROME -->
+  </suite> <!-- Nop-Commerce -->
+</testng-results>

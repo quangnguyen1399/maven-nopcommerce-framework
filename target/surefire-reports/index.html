@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Nop-Commerce">
+              <span class="suite-name border-passed">Nop-Commerce</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Nop-Commerce">
+                    <span>D:\Automation Test Project\07-Maven-framework\src\test\resources\runNopCommerce.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Nop-Commerce">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Nop-Commerce">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Nop-Commerce">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Nop-Commerce">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Nop-Commerce">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Nop-Commerce">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Nop-Commerce" class="hide-methods passed suite-Nop-Commerce"> (hide)</a> <!-- hide-methods passed suite-Nop-Commerce -->
+                      <a href="#" panel-name="suite-Nop-Commerce" class="show-methods passed suite-Nop-Commerce"> (show)</a> <!-- show-methods passed suite-Nop-Commerce -->
+                    </span>
+                    <div class="method-list-content passed suite-Nop-Commerce">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nop-Commerce" title="com.nopcommerce.user.User_04_Search" hash-for-method="Search_01_Empty_Data">Search_01_Empty_Data</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nop-Commerce" title="com.nopcommerce.user.User_04_Search" hash-for-method="Search_02_Not_Exit_Data">Search_02_Not_Exit_Data</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nop-Commerce" title="com.nopcommerce.user.User_04_Search" hash-for-method="Search_03_Relative_Product">Search_03_Relative_Product</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nop-Commerce" title="com.nopcommerce.user.User_04_Search" hash-for-method="Search_04_Absolute_Product">Search_04_Absolute_Product</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nop-Commerce" title="com.nopcommerce.user.User_04_Search" hash-for-method="Search_05_Parent_Categories">Search_05_Parent_Categories</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nop-Commerce" title="com.nopcommerce.user.User_04_Search" hash-for-method="Search_06_Sub_Categories">Search_06_Sub_Categories</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nop-Commerce" title="com.nopcommerce.user.User_04_Search" hash-for-method="Search_07_Incorrect_Manufacturer">Search_07_Incorrect_Manufacturer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nop-Commerce" title="com.nopcommerce.user.User_04_Search" hash-for-method="Search_08_Correct_Manufacturer">Search_08_Correct_Manufacturer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nop-Commerce" title="com.nopcommerce.user.User_01_Register" hash-for-method="User_03_Register_With_Success_Email_Password">User_03_Register_With_Success_Email_Password</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Nop-Commerce -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Nop-Commerce" class="panel Nop-Commerce">
+          <div class="suite-Nop-Commerce-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.nopcommerce.user.User_04_Search</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Search_01_Empty_Data">
+                  </a> <!-- Search_01_Empty_Data -->
+                  <span class="method-name">Search_01_Empty_Data</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Search_02_Not_Exit_Data">
+                  </a> <!-- Search_02_Not_Exit_Data -->
+                  <span class="method-name">Search_02_Not_Exit_Data</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Search_03_Relative_Product">
+                  </a> <!-- Search_03_Relative_Product -->
+                  <span class="method-name">Search_03_Relative_Product</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Search_04_Absolute_Product">
+                  </a> <!-- Search_04_Absolute_Product -->
+                  <span class="method-name">Search_04_Absolute_Product</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Search_05_Parent_Categories">
+                  </a> <!-- Search_05_Parent_Categories -->
+                  <span class="method-name">Search_05_Parent_Categories</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Search_06_Sub_Categories">
+                  </a> <!-- Search_06_Sub_Categories -->
+                  <span class="method-name">Search_06_Sub_Categories</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Search_07_Incorrect_Manufacturer">
+                  </a> <!-- Search_07_Incorrect_Manufacturer -->
+                  <span class="method-name">Search_07_Incorrect_Manufacturer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Search_08_Correct_Manufacturer">
+                  </a> <!-- Search_08_Correct_Manufacturer -->
+                  <span class="method-name">Search_08_Correct_Manufacturer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Nop-Commerce-class-passed -->
+          <div class="suite-Nop-Commerce-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.nopcommerce.user.User_01_Register</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="User_03_Register_With_Success_Email_Password">
+                  </a> <!-- User_03_Register_With_Success_Email_Password -->
+                  <span class="method-name">User_03_Register_With_Success_Email_Password</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Nop-Commerce-class-passed -->
+        </div> <!-- panel Nop-Commerce -->
+        <div panel-name="test-xml-Nop-Commerce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Automation Test Project\07-Maven-framework\src\test\resources\runNopCommerce.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Nop-Commerce&quot;&gt;
+  &lt;parameter name=&quot;url&quot; value=&quot;https://demo.nopcommerce.com/&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;commons.MethodListener&quot;/&gt;
+    &lt;listener class-name=&quot;reportConfig.ExtentReportListenerVersion4&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Run on CHROME&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.nopcommerce.user.User_01_Register&quot;/&gt;
+      &lt;class name=&quot;com.nopcommerce.user.User_04_Search&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Run on CHROME --&gt;
+&lt;/suite&gt; &lt;!-- Nop-Commerce --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Nop-Commerce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Nop-Commerce</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Run on CHROME (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Nop-Commerce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Nop-Commerce</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Nop-Commerce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Nop-Commerce</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Nop-Commerce');
+function tableData_Nop-Commerce() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'User_03_Register_With_Success_Email_Password')
+data.setCell(0, 2, 'com.nopcommerce.user.User_01_Register')
+data.setCell(0, 3, 5162);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Search_07_Incorrect_Manufacturer')
+data.setCell(1, 2, 'com.nopcommerce.user.User_04_Search')
+data.setCell(1, 3, 930);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Search_06_Sub_Categories')
+data.setCell(2, 2, 'com.nopcommerce.user.User_04_Search')
+data.setCell(2, 3, 921);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Search_08_Correct_Manufacturer')
+data.setCell(3, 2, 'com.nopcommerce.user.User_04_Search')
+data.setCell(3, 3, 910);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Search_05_Parent_Categories')
+data.setCell(4, 2, 'com.nopcommerce.user.User_04_Search')
+data.setCell(4, 3, 901);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Search_03_Relative_Product')
+data.setCell(5, 2, 'com.nopcommerce.user.User_04_Search')
+data.setCell(5, 3, 839);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Search_04_Absolute_Product')
+data.setCell(6, 2, 'com.nopcommerce.user.User_04_Search')
+data.setCell(6, 3, 700);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Search_02_Not_Exit_Data')
+data.setCell(7, 2, 'com.nopcommerce.user.User_04_Search')
+data.setCell(7, 3, 699);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Search_01_Empty_Data')
+data.setCell(8, 2, 'com.nopcommerce.user.User_04_Search')
+data.setCell(8, 3, 566);
+window.suiteTableData['Nop-Commerce']= { tableData: data, tableDiv: 'times-div-Nop-Commerce'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <div id="times-div-Nop-Commerce">
+              </div> <!-- times-div-Nop-Commerce -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Nop-Commerce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Nop-Commerce</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Search_02_Not_Exit_Data</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:56,316] Search_Not exit data Step 01: input to search keyword textbox: macbook pro 2015
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:56,463] Search_Not exit data Step 02: click to search button
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:56,957] Search_Not exit data Step 03: verify message not exit data: No products were found that matched your criteria.
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:57,014]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Search_01_Empty_Data</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:55,749] Search_Empty data Step 01: click to search button
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:56,244] Search_Empty data Step 02: verify error empty data displayed
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:56,315]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Search_03_Relative_Product</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:57,014] Search_Relative product Step 01: input to search keyword textbox: Lenovo
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:57,145] Search_Relative product Step 02: click to search button
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:57,725] Search_Relative product Step 03: verify with relative product dispalyed
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:57,788]  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:57,853]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Search_07_Incorrect_Manufacturer</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:02:00,377] Search_Incorrect manufacturer Step 01: input to search keyword textbox: Apple MacBook Pro
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:02:00,522] Search_Incorrect manufacturer Step 02: input to category textbox: Computers
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:02:00,622] Search_Incorrect manufacturer Step 03: input to manufacturer textbox: HP
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:02:00,714] Search_Incorrect manufacturer Step 04: click to search button
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:02:01,234] Search_Incorrect manufacturer Step 05: verify message not exit data: No products were found that matched your criteria.
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:02:01,305]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Search_08_Correct_Manufacturer</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:02:01,308] Search_Correct manufacturer Step 01: input to search keyword textbox: Apple MacBook Pro
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:02:01,461] Search_Correct manufacturer Step 02: input to category textbox: Computers
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:02:01,552] Search_Correct manufacturer Step 03: input to manufacturer textbox: Apple
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:02:01,630] Search_Correct manufacturer Step 04: click to search button
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:02:02,154] Search_Correct manufacturer Step 05: verify product dispalyed: Apple MacBook Pro 13-inch
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:02:02,218]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">User_03_Register_With_Success_Email_Password</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:44,520] Register_Invalid email - Step 01: Click to Male radio button
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:45,016] Register_Invalid email - Step 02: Input firstname textbox: quang
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:45,172] Register_Invalid email - Step 03: Input lastname textbox:nguyen
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:45,347] Register_Invalid email - Step 04: Selected day: 3
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:45,461] Register_Invalid email - Step 05: Selected month: March
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:45,557] Register_Invalid email - Step 06: Selected year: 1999
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:45,661] Register_Invalid email - Step 07: Input invalid email textbox: quangnguyen2624@gmail.com
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:45,819] Register_Invalid email - Step 08: Input company textbox: hutech
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:45,957] Register_Invalid email - Step 09: Input password textbox: 123456
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:46,232] Register_Invalid email - Step 10: Click to register button
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:47,111] Register_Invalid email - Step 11: Verify success message register
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:47,187]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Search_04_Absolute_Product</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:57,854] Search_Absolute product Step 01: input to search keyword textbox: ThinkPad X1 Carbon
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:57,997] Search_Absolute product Step 02: click to search button
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:58,495] Search_Absolute product Step 03: verify with absolute product dispalyed
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:58,554]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Search_05_Parent_Categories</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:58,554] Search_Parent categories Step 01: input to search keyword textbox: Apple MacBook Pro
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:58,698] Search_Parent categories Step 02: click to advanced search
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:58,806] Search_Parent categories Step 03: input to category textbox: Computers
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:58,900] Search_Parent categories Step 04: click to search button
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:59,399] Search_Parent categories Step 05: verify message not exit data: No products were found that matched your criteria.
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:59,455]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Search_06_Sub_Categories</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:59,456] Search_Sub categories Step 01: input to search keyword textbox: Apple MacBook Pro
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:59,616] Search_Sub categories Step 02: input to category textbox: Computers
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:59,713] Search_Sub categories Step 03: click to sub categories
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:01:59,807] Search_Sub categories Step 04: click to search button
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:02:00,325] Search_Sub categories Step 05: verify product dispalyed: Apple MacBook Pro 13-inch
+</span>
+                <span class="reporter-method-output">[INFO ] [2022-02-19 12:02:00,376]  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Nop-Commerce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Nop-Commerce" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.nopcommerce.user.User_01_Register</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(chrome, https://demo.nopcommerce.com/)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">User_03_Register_With_Success_Email_Password</span>
+                <span class="method-start">4785 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">9949 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.nopcommerce.user.User_04_Search</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(chrome, https://demo.nopcommerce.com/)</span>
+                <span class="method-start">10753 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Search_01_Empty_Data</span>
+                <span class="method-start">16031 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Search_02_Not_Exit_Data</span>
+                <span class="method-start">16597 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Search_03_Relative_Product</span>
+                <span class="method-start">17296 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Search_04_Absolute_Product</span>
+                <span class="method-start">18136 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Search_05_Parent_Categories</span>
+                <span class="method-start">18836 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Search_06_Sub_Categories</span>
+                <span class="method-start">19737 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Search_07_Incorrect_Manufacturer</span>
+                <span class="method-start">20658 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Search_08_Correct_Manufacturer</span>
+                <span class="method-start">21590 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">22500 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

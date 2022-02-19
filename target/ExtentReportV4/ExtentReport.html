@@ -1,0 +1,678 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link href='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>Nop Commerce E2E Testing</title>
+
+	<style type='text/css'>
+		/* json-tree */
+		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+	</style>
+	
+	<script type="text/javascript">
+		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
+		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
+	</script>
+</head>
+	<body class='extent dark default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo black"><img src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png"></a>
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1)" view='testrunner-logs-view'><i class='material-icons'>note</i></a></li>
+		</ul>
+		<!-- report name -->
+		<span class='report-name'>Functional UI</span>
+		<!-- report headline -->
+		<span class='report-headline'></span>
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a href='#!'>
+			<span class='label blue darken-3 suite-start-time'>Feb 19, 2022 12:02:03 PM</span>
+			</a>
+		</ul>
+	</div>
+</nav>		<!-- container -->
+		<div class='container'>
+<div id='test-view' class='view'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+			<!-- category toggle -->
+			<!-- category toggle -->
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+				<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+				<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+<div id='test-view-charts' class='subview-full'>
+    <div id='charts-row' class='row nm-v nm-h'>
+        <div class='col s12 m12 l12 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Tests</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='parent-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>9</span> test(s) passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="timeline-chart" class="row nm-v nm-h">
+        <div class="col s12 m12 l12 np-h">
+            <div class="card-panel">
+                <div class='left panel-name'>Timeline (seconds)</div>
+                <div class="chart-box" style="width:98%;max-height:145px;">
+                    <canvas id="timeline" height="120"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='test-collection' class='test-collection'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Search_02_Not_Exit_Data</span>
+						<span class='test-time'>Feb 19, 2022 12:01:56 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 19, 2022 12:01:56 PM</span>
+	<span class='label end-time'>Feb 19, 2022 12:02:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+831ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:02:03 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>Search_01_Empty_Data</span>
+						<span class='test-time'>Feb 19, 2022 12:01:55 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 19, 2022 12:01:55 PM</span>
+	<span class='label end-time'>Feb 19, 2022 12:02:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+401ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:02:03 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>Search_03_Relative_Product</span>
+						<span class='test-time'>Feb 19, 2022 12:01:57 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 19, 2022 12:01:57 PM</span>
+	<span class='label end-time'>Feb 19, 2022 12:02:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+137ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:02:03 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>Search_07_Incorrect_Manufacturer</span>
+						<span class='test-time'>Feb 19, 2022 12:02:00 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 19, 2022 12:02:00 PM</span>
+	<span class='label end-time'>Feb 19, 2022 12:02:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+775ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:02:03 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>Search_08_Correct_Manufacturer</span>
+						<span class='test-time'>Feb 19, 2022 12:02:01 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 19, 2022 12:02:01 PM</span>
+	<span class='label end-time'>Feb 19, 2022 12:02:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+843ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:02:03 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>User_03_Register_With_Success_Email_Password</span>
+						<span class='test-time'>Feb 19, 2022 12:01:44 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 19, 2022 12:01:44 PM</span>
+	<span class='label end-time'>Feb 19, 2022 12:02:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+648ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:02:03 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>Search_04_Absolute_Product</span>
+						<span class='test-time'>Feb 19, 2022 12:01:57 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 19, 2022 12:01:57 PM</span>
+	<span class='label end-time'>Feb 19, 2022 12:02:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+297ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:02:03 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>Search_05_Parent_Categories</span>
+						<span class='test-time'>Feb 19, 2022 12:01:58 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 19, 2022 12:01:58 PM</span>
+	<span class='label end-time'>Feb 19, 2022 12:02:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+598ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:02:03 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>Search_06_Sub_Categories</span>
+						<span class='test-time'>Feb 19, 2022 12:01:59 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 19, 2022 12:01:59 PM</span>
+	<span class='label end-time'>Feb 19, 2022 12:02:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+697ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:02:03 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<div id='step-filters' class="right sr-filters">
+				<a class="btn-floating waves-effect waves-light green" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></a>
+				<a class="btn-floating waves-effect waves-light red" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light red darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light pink text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></a>
+				<a class="btn-floating waves-effect waves-light orange" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></a>
+				<a class="btn-floating waves-effect waves-light teal" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></a>
+				<a class="btn-floating waves-effect waves-light grey" status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></a>
+			</div>
+			<h5 class='test-name'></h5>
+		</div>
+	</div>
+	<!-- subview right -->
+</div>
+<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>9</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>0</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Feb 19, 2022 12:02:03 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Feb 19, 2022 12:02:03 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 0m 0s+55ms</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<div id='testrunner-logs-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>TestRunner Logs</h5>
+		
+		<div class='card-panel'>
+				[INFO ] [2022-02-19 12:01:43,882] Pre-condition Step 01: Open Register link
+<br>
+				[INFO ] [2022-02-19 12:01:44,520] Register_Invalid email - Step 01: Click to Male radio button
+<br>
+				[INFO ] [2022-02-19 12:01:45,016] Register_Invalid email - Step 02: Input firstname textbox: quang
+<br>
+				[INFO ] [2022-02-19 12:01:45,172] Register_Invalid email - Step 03: Input lastname textbox:nguyen
+<br>
+				[INFO ] [2022-02-19 12:01:45,347] Register_Invalid email - Step 04: Selected day: 3
+<br>
+				[INFO ] [2022-02-19 12:01:45,461] Register_Invalid email - Step 05: Selected month: March
+<br>
+				[INFO ] [2022-02-19 12:01:45,557] Register_Invalid email - Step 06: Selected year: 1999
+<br>
+				[INFO ] [2022-02-19 12:01:45,661] Register_Invalid email - Step 07: Input invalid email textbox: quangnguyen2624@gmail.com
+<br>
+				[INFO ] [2022-02-19 12:01:45,819] Register_Invalid email - Step 08: Input company textbox: hutech
+<br>
+				[INFO ] [2022-02-19 12:01:45,957] Register_Invalid email - Step 09: Input password textbox: 123456
+<br>
+				[INFO ] [2022-02-19 12:01:46,232] Register_Invalid email - Step 10: Click to register button
+<br>
+				[INFO ] [2022-02-19 12:01:47,111] Register_Invalid email - Step 11: Verify success message register
+<br>
+				[INFO ] [2022-02-19 12:01:47,187]  -------------------------- PASSED -------------------------- 
+<br>
+				[INFO ] [2022-02-19 12:01:49,667] OS name = windows 10
+<br>
+				[INFO ] [2022-02-19 12:01:49,668] Driver instance name = windows 10
+<br>
+				[INFO ] [2022-02-19 12:01:53,508] Pre-condition Step 01: Open homepage nop commerce
+<br>
+				[INFO ] [2022-02-19 12:01:53,508] Pre-condition Step 02: Click and open login link
+<br>
+				[INFO ] [2022-02-19 12:01:54,075] Pre-condition Step 03: Input to email textbox: quangnguyen2624@gmail.com
+<br>
+				[INFO ] [2022-02-19 12:01:54,215] Pre-condition Step 04: Input to password textbox: 123456
+<br>
+				[INFO ] [2022-02-19 12:01:54,359] Pre-condition Step 05: Click login button
+<br>
+				[INFO ] [2022-02-19 12:01:55,144] Pre-condition Step 06: Click to search link at footer
+<br>
+				[INFO ] [2022-02-19 12:01:55,749] Search_Empty data Step 01: click to search button
+<br>
+				[INFO ] [2022-02-19 12:01:56,244] Search_Empty data Step 02: verify error empty data displayed
+<br>
+				[INFO ] [2022-02-19 12:01:56,315]  -------------------------- PASSED -------------------------- 
+<br>
+				[INFO ] [2022-02-19 12:01:56,316] Search_Not exit data Step 01: input to search keyword textbox: macbook pro 2015
+<br>
+				[INFO ] [2022-02-19 12:01:56,463] Search_Not exit data Step 02: click to search button
+<br>
+				[INFO ] [2022-02-19 12:01:56,957] Search_Not exit data Step 03: verify message not exit data: No products were found that matched your criteria.
+<br>
+				[INFO ] [2022-02-19 12:01:57,014]  -------------------------- PASSED -------------------------- 
+<br>
+				[INFO ] [2022-02-19 12:01:57,014] Search_Relative product Step 01: input to search keyword textbox: Lenovo
+<br>
+				[INFO ] [2022-02-19 12:01:57,145] Search_Relative product Step 02: click to search button
+<br>
+				[INFO ] [2022-02-19 12:01:57,725] Search_Relative product Step 03: verify with relative product dispalyed
+<br>
+				[INFO ] [2022-02-19 12:01:57,788]  -------------------------- PASSED -------------------------- 
+<br>
+				[INFO ] [2022-02-19 12:01:57,853]  -------------------------- PASSED -------------------------- 
+<br>
+				[INFO ] [2022-02-19 12:01:57,854] Search_Absolute product Step 01: input to search keyword textbox: ThinkPad X1 Carbon
+<br>
+				[INFO ] [2022-02-19 12:01:57,997] Search_Absolute product Step 02: click to search button
+<br>
+				[INFO ] [2022-02-19 12:01:58,495] Search_Absolute product Step 03: verify with absolute product dispalyed
+<br>
+				[INFO ] [2022-02-19 12:01:58,554]  -------------------------- PASSED -------------------------- 
+<br>
+				[INFO ] [2022-02-19 12:01:58,554] Search_Parent categories Step 01: input to search keyword textbox: Apple MacBook Pro
+<br>
+				[INFO ] [2022-02-19 12:01:58,698] Search_Parent categories Step 02: click to advanced search
+<br>
+				[INFO ] [2022-02-19 12:01:58,806] Search_Parent categories Step 03: input to category textbox: Computers
+<br>
+				[INFO ] [2022-02-19 12:01:58,900] Search_Parent categories Step 04: click to search button
+<br>
+				[INFO ] [2022-02-19 12:01:59,399] Search_Parent categories Step 05: verify message not exit data: No products were found that matched your criteria.
+<br>
+				[INFO ] [2022-02-19 12:01:59,455]  -------------------------- PASSED -------------------------- 
+<br>
+				[INFO ] [2022-02-19 12:01:59,456] Search_Sub categories Step 01: input to search keyword textbox: Apple MacBook Pro
+<br>
+				[INFO ] [2022-02-19 12:01:59,616] Search_Sub categories Step 02: input to category textbox: Computers
+<br>
+				[INFO ] [2022-02-19 12:01:59,713] Search_Sub categories Step 03: click to sub categories
+<br>
+				[INFO ] [2022-02-19 12:01:59,807] Search_Sub categories Step 04: click to search button
+<br>
+				[INFO ] [2022-02-19 12:02:00,325] Search_Sub categories Step 05: verify product dispalyed: Apple MacBook Pro 13-inch
+<br>
+				[INFO ] [2022-02-19 12:02:00,376]  -------------------------- PASSED -------------------------- 
+<br>
+				[INFO ] [2022-02-19 12:02:00,377] Search_Incorrect manufacturer Step 01: input to search keyword textbox: Apple MacBook Pro
+<br>
+				[INFO ] [2022-02-19 12:02:00,522] Search_Incorrect manufacturer Step 02: input to category textbox: Computers
+<br>
+				[INFO ] [2022-02-19 12:02:00,622] Search_Incorrect manufacturer Step 03: input to manufacturer textbox: HP
+<br>
+				[INFO ] [2022-02-19 12:02:00,714] Search_Incorrect manufacturer Step 04: click to search button
+<br>
+				[INFO ] [2022-02-19 12:02:01,234] Search_Incorrect manufacturer Step 05: verify message not exit data: No products were found that matched your criteria.
+<br>
+				[INFO ] [2022-02-19 12:02:01,305]  -------------------------- PASSED -------------------------- 
+<br>
+				[INFO ] [2022-02-19 12:02:01,308] Search_Correct manufacturer Step 01: input to search keyword textbox: Apple MacBook Pro
+<br>
+				[INFO ] [2022-02-19 12:02:01,461] Search_Correct manufacturer Step 02: input to category textbox: Computers
+<br>
+				[INFO ] [2022-02-19 12:02:01,552] Search_Correct manufacturer Step 03: input to manufacturer textbox: Apple
+<br>
+				[INFO ] [2022-02-19 12:02:01,630] Search_Correct manufacturer Step 04: click to search button
+<br>
+				[INFO ] [2022-02-19 12:02:02,154] Search_Correct manufacturer Step 05: verify product dispalyed: Apple MacBook Pro 13-inch
+<br>
+				[INFO ] [2022-02-19 12:02:02,218]  -------------------------- PASSED -------------------------- 
+<br>
+				[INFO ] [2022-02-19 12:02:02,218] OS name = windows 10
+<br>
+				[INFO ] [2022-02-19 12:02:02,218] Driver instance name = windows 10
+<br>
+		</div>
+	</div>
+</div>
+<!-- testrunner-logs view -->		</div>
+		<!-- container -->
+		<script>
+			var statusGroup = {
+                parentCount: 9,
+				passParent: 9,
+				failParent: 0,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 0,
+				childCount: 0,
+				passChild: 0,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				debugChild: 0,
+				exceptionsChild: 0,
+				grandChildCount: 0,
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				debugGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		<script>
+			var timeline = {
+			        "Search_02_Not_Exit_Data":6.831,"Search_01_Empty_Data":7.401,"Search_03_Relative_Product":6.137,"Search_07_Incorrect_Manufacturer":2.775,"Search_08_Correct_Manufacturer":1.843,"User_03_Register_With_Success_Email_Password":18.648,"Search_04_Absolute_Product":5.297,"Search_05_Parent_Categories":4.598,"Search_06_Sub_Categories":3.697
+			};
+		</script>
+		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>
+		<script type='text/javascript'>
+		</script>
+	</body>
+</html>

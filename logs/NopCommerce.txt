@@ -1,0 +1,63 @@
+[INFO ] [2022-02-19 12:01:43,882] Pre-condition Step 01: Open Register link
+[INFO ] [2022-02-19 12:01:44,520] Register_Invalid email - Step 01: Click to Male radio button
+[INFO ] [2022-02-19 12:01:45,016] Register_Invalid email - Step 02: Input firstname textbox: quang
+[INFO ] [2022-02-19 12:01:45,172] Register_Invalid email - Step 03: Input lastname textbox:nguyen
+[INFO ] [2022-02-19 12:01:45,347] Register_Invalid email - Step 04: Selected day: 3
+[INFO ] [2022-02-19 12:01:45,461] Register_Invalid email - Step 05: Selected month: March
+[INFO ] [2022-02-19 12:01:45,557] Register_Invalid email - Step 06: Selected year: 1999
+[INFO ] [2022-02-19 12:01:45,661] Register_Invalid email - Step 07: Input invalid email textbox: quangnguyen2624@gmail.com
+[INFO ] [2022-02-19 12:01:45,819] Register_Invalid email - Step 08: Input company textbox: hutech
+[INFO ] [2022-02-19 12:01:45,957] Register_Invalid email - Step 09: Input password textbox: 123456
+[INFO ] [2022-02-19 12:01:46,232] Register_Invalid email - Step 10: Click to register button
+[INFO ] [2022-02-19 12:01:47,111] Register_Invalid email - Step 11: Verify success message register
+[INFO ] [2022-02-19 12:01:47,187]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-02-19 12:01:49,667] OS name = windows 10
+[INFO ] [2022-02-19 12:01:49,668] Driver instance name = windows 10
+[INFO ] [2022-02-19 12:01:53,508] Pre-condition Step 01: Open homepage nop commerce
+[INFO ] [2022-02-19 12:01:53,508] Pre-condition Step 02: Click and open login link
+[INFO ] [2022-02-19 12:01:54,075] Pre-condition Step 03: Input to email textbox: quangnguyen2624@gmail.com
+[INFO ] [2022-02-19 12:01:54,215] Pre-condition Step 04: Input to password textbox: 123456
+[INFO ] [2022-02-19 12:01:54,359] Pre-condition Step 05: Click login button
+[INFO ] [2022-02-19 12:01:55,144] Pre-condition Step 06: Click to search link at footer
+[INFO ] [2022-02-19 12:01:55,749] Search_Empty data Step 01: click to search button
+[INFO ] [2022-02-19 12:01:56,244] Search_Empty data Step 02: verify error empty data displayed
+[INFO ] [2022-02-19 12:01:56,315]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-02-19 12:01:56,316] Search_Not exit data Step 01: input to search keyword textbox: macbook pro 2015
+[INFO ] [2022-02-19 12:01:56,463] Search_Not exit data Step 02: click to search button
+[INFO ] [2022-02-19 12:01:56,957] Search_Not exit data Step 03: verify message not exit data: No products were found that matched your criteria.
+[INFO ] [2022-02-19 12:01:57,014]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-02-19 12:01:57,014] Search_Relative product Step 01: input to search keyword textbox: Lenovo
+[INFO ] [2022-02-19 12:01:57,145] Search_Relative product Step 02: click to search button
+[INFO ] [2022-02-19 12:01:57,725] Search_Relative product Step 03: verify with relative product dispalyed
+[INFO ] [2022-02-19 12:01:57,788]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-02-19 12:01:57,853]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-02-19 12:01:57,854] Search_Absolute product Step 01: input to search keyword textbox: ThinkPad X1 Carbon
+[INFO ] [2022-02-19 12:01:57,997] Search_Absolute product Step 02: click to search button
+[INFO ] [2022-02-19 12:01:58,495] Search_Absolute product Step 03: verify with absolute product dispalyed
+[INFO ] [2022-02-19 12:01:58,554]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-02-19 12:01:58,554] Search_Parent categories Step 01: input to search keyword textbox: Apple MacBook Pro
+[INFO ] [2022-02-19 12:01:58,698] Search_Parent categories Step 02: click to advanced search
+[INFO ] [2022-02-19 12:01:58,806] Search_Parent categories Step 03: input to category textbox: Computers
+[INFO ] [2022-02-19 12:01:58,900] Search_Parent categories Step 04: click to search button
+[INFO ] [2022-02-19 12:01:59,399] Search_Parent categories Step 05: verify message not exit data: No products were found that matched your criteria.
+[INFO ] [2022-02-19 12:01:59,455]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-02-19 12:01:59,456] Search_Sub categories Step 01: input to search keyword textbox: Apple MacBook Pro
+[INFO ] [2022-02-19 12:01:59,616] Search_Sub categories Step 02: input to category textbox: Computers
+[INFO ] [2022-02-19 12:01:59,713] Search_Sub categories Step 03: click to sub categories
+[INFO ] [2022-02-19 12:01:59,807] Search_Sub categories Step 04: click to search button
+[INFO ] [2022-02-19 12:02:00,325] Search_Sub categories Step 05: verify product dispalyed: Apple MacBook Pro 13-inch
+[INFO ] [2022-02-19 12:02:00,376]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-02-19 12:02:00,377] Search_Incorrect manufacturer Step 01: input to search keyword textbox: Apple MacBook Pro
+[INFO ] [2022-02-19 12:02:00,522] Search_Incorrect manufacturer Step 02: input to category textbox: Computers
+[INFO ] [2022-02-19 12:02:00,622] Search_Incorrect manufacturer Step 03: input to manufacturer textbox: HP
+[INFO ] [2022-02-19 12:02:00,714] Search_Incorrect manufacturer Step 04: click to search button
+[INFO ] [2022-02-19 12:02:01,234] Search_Incorrect manufacturer Step 05: verify message not exit data: No products were found that matched your criteria.
+[INFO ] [2022-02-19 12:02:01,305]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-02-19 12:02:01,308] Search_Correct manufacturer Step 01: input to search keyword textbox: Apple MacBook Pro
+[INFO ] [2022-02-19 12:02:01,461] Search_Correct manufacturer Step 02: input to category textbox: Computers
+[INFO ] [2022-02-19 12:02:01,552] Search_Correct manufacturer Step 03: input to manufacturer textbox: Apple
+[INFO ] [2022-02-19 12:02:01,630] Search_Correct manufacturer Step 04: click to search button
+[INFO ] [2022-02-19 12:02:02,154] Search_Correct manufacturer Step 05: verify product dispalyed: Apple MacBook Pro 13-inch
+[INFO ] [2022-02-19 12:02:02,218]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-02-19 12:02:02,218] OS name = windows 10
+[INFO ] [2022-02-19 12:02:02,218] Driver instance name = windows 10
